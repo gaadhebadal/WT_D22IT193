@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body style="text-align: center;">
+       <label>Celsius</label>
+       <input id="Celsius" type="number" placeholder="Celsius" oninput="temp(this.value)" onchange="temp(this.value)">
+       </p>
+       <h3>Fahrenheit : <span id="outputCelsius">_______</span>°F </h3>
+       <script>
+       function temp(valNum) {
+       valNum = parseFloat(valNum);
+       document.getElementById("outputCelsius").innerHTML = (valNum*9/5)+32; }
+       </script></body>
+</html>

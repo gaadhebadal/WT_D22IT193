@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+       <h1>Using the Spread Operator</h1>
+       <script>
+              const person = {
+                     name: 'Badal',
+                     age: 19,
+                     city: 'Gir_somnath',
+                     country: 'India'
+              };
+              const { name, age, ...address } = person;
+              console.log(name); 
+              console.log(age); 
+              console.log(address); 
+       </script>
+</body>
+</html>

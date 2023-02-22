@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <title>Spoural Event</title>
+    <style>
+        .main{
+            border-radius: 5px;
+            padding: 20px;
+            background-color: azure;
+        }
+        .col{
+            padding:15px;
+        }
+        .row{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <form action="">
+        <div class="row">
+            <div class="col">
+                <label> Name :</label> <input type="text" placeholder="Enter your name..">
+            </div>
+            <div class="col">
+                <label for="">ID :</label> <input type="text" placeholder="Enter your id..">
+            </div>
+            <div class="col">
+                <label for="">Department :</label> <select> 
+                    <option value="IT"selected>IT</option>
+                    <option value="CE">CE</option>
+                    <option value="CSE">CSE</option>
+                    <option value="OTHER">OTHER</option>
+                <select>
+            </div>
+            <div class="col">
+                <label for="">Gender :</label> 
+                <input type="radio" name="gen">
+                <label for="">Male</label>
+                <input type="radio" name="gen">
+                <label for="">Female</label>
+            </div>
+            <div class="col">
+                <label for="">You Want To  Participant in :</label>
+                <input list="event"><datalist id="event">
+                    <option value="Sports">
+                    <option value="Dancing">
+                    <option value="Singing">
+                    <option value="Games">
+                    <option value="Stand Up">
+                    <option value="Coding">
+                </datalist>
+            </div>
+            <div class="col">
+                <input type="button" value="Submit " onclick="done()">
+            </div>
+        </div>
+        </form>
+    </div>
+    <script>
+        function done(){
+            alert("Register Successfully ! ")
+        }
+    </script>
+</body>
+</html>

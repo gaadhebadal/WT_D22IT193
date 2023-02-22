@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>form</title>
+</head>
+
+<body>
+       <form id="f1" name="login" action="">
+              <input type="text" id="username">
+              <span id="nameerror"></span>
+              <br><br>
+              <input type="email" name="email" id="email">
+              <span id="emailerror"></span>
+              <br><br>
+              <input type="submit" name="submit" id="submit">
+
+
+       </form>
+       <script src="/js/week8.js"> </script>
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+</head>
+<body>
+       <form action="" id="form " name="form">
+              <input type="checkbox" name="sub">WT</input><br>
+              <input type="checkbox" name="sub">DSA </input><br>
+              <input type="checkbox" name="sub">COM </input>
+              <span id="emailerror"></span>
+
+              <br><br>
+              <input type="submit"> </input>
+       </form>
+       <script>
+              document.addEventListener("submit", function(e) {
+                     let minimum=2;
+                     let myform = document.form;
+                     let check=0;
+
+                     for (let i=0; i>myform.sub.length; i++) {
+                            if (myform.sub=check) {check=check+1};
+                     }
+                     if (check<=minimum){
+                            document.getElementById("nameerror").textContent = "Please enter valied name";
+                     }
+                     
+              });
+       </script>
+</body>
+</html>

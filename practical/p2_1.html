@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Basic Calculator using prompt</title>
+</head>
+
+<body>
+<h1>Basic Calculator using prompt</h1>
+<button onclick="cal()">calculate</button>
+</body>
+<script>
+       function cal(){
+
+              let a = prompt("enter value of a: ");
+              var a1 = parseInt(a);
+              let f = prompt("enter expression you want to perform...like +,-,*,/");
+              let b = prompt("enter value of b: ");
+              var b1 = parseInt(b);
+              if (f == "+") {
+                     let c = a1 + b1;
+                     alert(c);
+              }
+              else if (f == "-") {
+                     let c = a1 - b1;
+                     alert(c);
+              }
+              else if (f == "*") {
+                     let c = a1 * b1;
+                     alert(c);
+              }
+              else if (f == "/") {
+                     let c = a1 / b1;
+                     alert(c);
+              }
+       }
+</script>
+
+</html>
