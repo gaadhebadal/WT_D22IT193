@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsiv deing</title>
+    <style>
+        html{
+            font-size: 10px;
+        }
+        .maina{
+            font-size: 10px;
+            border: 2px solid green;
+            width: 100vw;
+            height: 100vh;
+        }
+        h1{
+            text-align: center;
+        }
+        #f{
+            font-size: 10em;
+            
+        }
+        #s{
+            font-size: 4rem;
+        }
+        .box{
+            background-color: rgb(236, 230, 230);
+            color: black;
+            font-size: large;
+            text-align: center;
+            display: none;
+        }
+        @media(max-width:500px){
+            #b1{
+                display: block;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:800px) {
+            #b2{
+                display: block;
+                background-color: rgba(190, 185, 195, 0.25);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maina">
+        <h1 id="f">this is hading one</h1>
+        <h1 id="s">this is hading two</h1>
+        <h1 id="t">this is hading three</h1>
+    </div>
+    <h1>media queries</h1>
+    <div class="box" id="b1">i phone </div>
+    <div class="box" id="b2">samsung</div>
+    <div class="box" id="b3">vivo</div>
+    <div class="box" id="b4">mi</div>
+</body>
+</html>

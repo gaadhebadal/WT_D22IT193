@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css tut</title>
+    <style>
+        /* id selector */
+        #first {
+            color: blue;
+            background-color: aqua !important;
+            font-style: italic;
+        }
+
+        /* class selector */
+        .bg {
+            background-color: gray;
+            color: wheat;
+        }
+
+        /* Grouping selector */
+        span,
+        footer {
+            background-color: pink;
+        }
+
+        /* element selector */
+        /* p{
+            border: solid black;
+        } */
+        #font {
+            font-family: Arial;
+            font-size: large;
+
+            font-weight: bold;
+            font-style: oblique;
+        }
+
+        #color {
+            color: rgb(29, 33, 36);
+            /*color by name  */
+            /* rgb color ->(0,0,0) to (255,255,255) */
+            /* hexcolor -> #ffffff */
+            background-color: #8f56f935;
+        }
+
+        #border {
+            /* background-color:rgb(128, 0, 94, 0.042); */
+            width: 2000px;
+            height: 2000px;
+            /* border-width: 5px;
+            border-style: solid;
+            border-radius: 12px; */
+            /* border: 20px solid yellowgreen;
+            border-radius: 20px; */
+            border-top: 20px solid rgb(153, 22, 22);
+            border-right: 20px solid #565ef935;
+            border-left: 20px solid rgba(0, 0, 0, 0.144);
+            border-bottom: 20px solid rgb(75, 40, 87);
+            background-image: url('IMG_20210322_203944_698.jpg');
+            border-style: double;
+            background-repeat: no-repeat;
+            background-position: center;
+            block-size: cover;
+        }
+
+        .container {
+            background-color: rgb(125, 141, 133);
+            border: double goldenrod;
+            padding: 10px 0px 15px 20px;
+            /* padding/margin=top right bottom left */
+            margin: 20px;
+            border-width: 10px;
+
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="badal.css"> -->
+</head>
+<body>
+    <!-- <h2>this is css tutorial </h2>
+    <p style="color: blue;background-color: brown;">it will twch about you everithing</p>
+    <p>it will twch about you everithing</p>
+    <p>it will twch about you everithing</p><br><br> -->
+
+    <h1>css selectors</h1>
+    <p id="first">this is simple paragraph to demonstrate css selectors</p>
+    <p id="second" class="bg">this is anodher simple paragraph to demonstrate css selectors</p>
+    <p>this is yet another simple paragraph to demonstrate css selectors</p>
+    <div>
+        <span>this is span </span>
+    </div>
+    <footer>this is footer</footer>
+
+    <br><br>
+    <h1>css font</h1>
+    <p id="font">lets paly with fonts..</p><br>
+
+    <h1>css color</h1>
+    <p id="color">lets paly with color.</p><br><br>
+
+    <h1>height,width,border and background</h1>
+    <p id="border">border and background</p><br><br>
+
+    <h1>box models....</h1>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <!-- lorem is used to genrete automatic text lorem100,lorem10.... -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium culpa labore recusandae. Laboriosam
+            error aliquid velit repellat voluptatibus. Harum eaque, veniam fuga recusandae ipsa excepturi corporis.
+            Nesciunt modi veritatis necessitatibus.</p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium culpa labore recusandae.
+            Laboriosam error aliquid velit repellat voluptatibus. Harum eaque, veniam fuga recusandae ipsa excepturi
+            corporis. Nesciunt modi veritatis necessitatibus.</p>
+    </div>
+</body>
+</html>

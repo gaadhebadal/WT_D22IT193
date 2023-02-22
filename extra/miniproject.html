@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>books</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url(bbook.png);
+        color: aliceblue;
+        font-family: 'Baloo 2', cursive;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 40px;
+        top: 20px;
+        
+    }
+    .left img{
+        width: 370px;
+        filter: invert(100%);
+        display: inline-block;
+        position: absolute;
+        left:-100px;
+        top: -80px;  
+    }
+    .mid{
+        display: block;
+        width: 34%;
+        margin: 20px auto;
+        display: inline-block;
+        position: absolute;
+        right: 430px;
+        top: 25px;  
+        
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 70px;
+        top: 45px;  
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{display: inline-block;}
+    .navbar li a{
+        text-decoration: none;
+        color: aliceblue;
+        padding: 34px 20px;
+        font-size: large;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+    }
+    .container{
+        margin: 292px auto;
+        padding: 20px 30px;
+        width: 33%;
+        /* border: 2px solid white; */
+    }
+    .group input{
+        text-align: left;
+        display: block;
+        width: 250px;
+        padding: 22px;
+        margin: 28px auto;
+        border-radius: 10px;
+    }
+    #btn{
+        display: block;
+        width: 33%;
+        margin: auto;
+    }
+    button{
+        border-radius: 8px;
+        font-size: xx-large;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        text-decoration: dashed;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <header id="header">
+        <div id="left" class="left">
+           <img src="gym.png" alt="">
+        </div>
+        <div id="mid" class="mid">
+            <ui class="navbar">
+                <li><a href="#" class="active">About</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">contact</a></li>
+            </ui>
+        </div>
+        <div id="right" class="right">
+            <input type="search" value="Google" name="" id="">
+        
+        </div>
+    </header>
+    <div class="container">
+       <h1>Enter your details</h1>
+        <form action="#">
+            <div class="group">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="group">
+                <input type="text" placeholder="Enter your phone number">
+            </div>
+            <div class="group">
+                <input type="text" placeholder="Enter your age">
+            </div>
+            <div class="group">
+                <input type="text" placeholder="Enter your city">
+            </div>
+            <button id="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
